@@ -21,5 +21,5 @@ has_many tweets
 |text        |string     |null false     |
 |user        |reference  |foreignkey true|
 
-## 
+## assisiation
 belongs_to user
