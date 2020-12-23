@@ -4,5 +4,9 @@ class TweetsController < ApplicationController
     @tweet = Tweet.all
   end
 
-private
+  def new
+    @tweet =  Tweet.new
+  end
+
+
 end

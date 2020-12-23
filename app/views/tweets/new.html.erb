@@ -1,0 +1,6 @@
+<h1>newです〜</h1>
+  <p>投稿してください</p>
+  <%= form_with model:@tweet,  local: true do |f| %>
+    <%= f.text_field :text %>
+    <%= f.submit %>
+  <% end %>
