@@ -1,6 +1,10 @@
 <h1>newです〜</h1>
   <p>投稿してください</p>
+  <%if @errors.present?%>
+  <%= @errors%>
+  <% end %>
+
   <%= form_with model:@tweet,  local: true do |f| %>
-    <%= f.text_field :text %>
+    <%= f.text_field :tweet %>
     <%= f.submit %>
   <% end %>
